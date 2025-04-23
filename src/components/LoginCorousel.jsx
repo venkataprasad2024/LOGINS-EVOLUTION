@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import Login90s from './Login90s';
-// import Login20s from './Login20s';
+ import Login20s from './Login20s';
 // import LoginMid20s from './LoginMid20s';
 // import Login2020s from './Login2020s';
 // import LoginModern from './LoginModern';
@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const components = [
   { title: 'Login — 90s', component: <Login90s /> },
-//   { title: 'Login — 20s', component: <Login20s /> },
+   { title: 'Login — 20s', component: <Login20s /> },
 //   { title: 'Login — Mid 20s', component: <LoginMid20s /> },
 //   { title: 'Login — 2020s', component: <Login2020s /> },
 //   { title: 'Login — Modern', component: <LoginModern /> },
@@ -40,23 +40,22 @@ const LoginCarousel = () => {
   }, []);
 
   return (
-    <motion.div className={`h-screen transition-all duration-1000 ${backgrounds[index]} text-white`}>
-      <div className="text-center py-6">
-        <AnimatePresence mode="wait">
-          <motion.h1
-            key={components[index].title}
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 20 }}
-            transition={{ duration: 0.5 }}
-            className="text-3xl font-bold font-serif"
-          >
-            {components[index].title}
-          </motion.h1>
-        </AnimatePresence>
-      </div>
-
-      <div
+    <motion.div className={`h-screen transition-all duration-700 ease-in-out ${backgrounds[index]} text-white`}>
+    <div className="text-center py-6 bg-opacity-50 backdrop-blur-sm">
+      <AnimatePresence mode="wait">
+        <motion.h1
+          key={components[index].title}
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 20 }}
+          transition={{ duration: 0.5 }}
+          className="text-3xl font-bold font-serif drop-shadow"
+        >
+          {components[index].title}
+        </motion.h1>
+      </AnimatePresence>
+    </div>
+   <div
         ref={containerRef}
         className="flex overflow-x-scroll snap-x snap-mandatory h-[85vh] scrollbar-hide"
       >
