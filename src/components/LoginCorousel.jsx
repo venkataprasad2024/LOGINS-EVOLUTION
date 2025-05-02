@@ -3,7 +3,7 @@ import Login90s from './Login90s';
  import Login20s from './Login20s';
  import LoginMid20s from './LoginMid20s';
  import Login2020s from './Login2020s';
-// import LoginModern from './LoginModern';
+ import LoginModern from './LoginModern';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const components = [
@@ -11,7 +11,7 @@ const components = [
    { title: 'Login — 20s', component: <Login20s /> },
   { title: 'Login — Mid 20s', component: <LoginMid20s /> },
    { title: 'Login — 2020s', component: <Login2020s /> },
-//   { title: 'Login — Modern', component: <LoginModern /> },
+   { title: 'Login — Modern', component: <LoginModern /> },
 ];
 
 const backgrounds = [
