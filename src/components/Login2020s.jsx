@@ -4,11 +4,9 @@ const Login2020s = () => {
   const [isSignUp, setIsSignUp] = useState(false);
 
   return (
-    <div
-      className={`transition-all duration-1000 ease-in-out w-full min-h-screen flex items-center justify-center px-4 font-sans bg-gradient-to-br from-indigo-900 via-purple-800 to-pink-900`}
-    >
+
       <div
-        className={`w-full max-w-md p-8 border border-white/40 rounded-2xl shadow-xl backdrop-blur-md transition-all duration-700 ease-in-out ${
+        className={`w-full ml-10 max-w-md p-8 bg-gradient-to-br from-indigo-900 via-purple-800 to-pink-900 border border-white/40 rounded-2xl shadow-xl backdrop-blur-md transition-all duration-700 ease-in-out ${
           isSignUp ? 'min-h-[500px]' : 'min-h-[440px]'
         }`}
       >
@@ -63,7 +61,7 @@ const Login2020s = () => {
           © 2021 Glassify Inc.
         </p>
       </div>
-    </div>
+
   );
 };
 
