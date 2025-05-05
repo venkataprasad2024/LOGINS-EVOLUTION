@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
 
-const Login90s = () => {
+const Login90s = ({ onLoginSuccess }) => {
   const [isSignUp, setIsSignUp] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // simulate login success
+    onLoginSuccess(); 
+  };
 
   return (
     <div className="h-screen flex items-center justify-center bg-gradient-to-br from-gray-500 to-gray-300 text-black font-serif">
@@ -10,7 +16,7 @@ const Login90s = () => {
           {isSignUp ? 'Create Account' : 'Login'}
         </h1>
 
-        <form className="flex flex-col gap-3 text-sm">
+        <form className="flex flex-col gap-3 text-sm" onSubmit={handleSubmit}>
           <label>
             Username:
             <input

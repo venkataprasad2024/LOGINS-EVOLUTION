@@ -1,15 +1,20 @@
 import React, { useState } from 'react';
 
-const LoginMid20s = () => {
+const LoginMid20s = ({ onLoginSuccess }) => {
   const [isSignUp, setIsSignUp] = useState(false);
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    onLoginSuccess(); // move to next era
+  };
+
   return (
-    <div className="w-[420px] ml-12 bg-gradient-to-br from-pink-500 via-red-400 to-yellow-300 backdrop-blur-lg text-white p-10 rounded-2xl shadow-2xl border border-white/20 transition-all duration-500">
+    <div className="w-[420px] ml-12 -mt-15 bg-gradient-to-br from-pink-500 via-red-400 to-yellow-300 backdrop-blur-lg text-white p-10 rounded-2xl shadow-2xl border border-white/20 transition-all duration-500">
       <h2 className="text-4xl font-bold text-center mb-8">
         {isSignUp ? 'Create Account' : 'Welcome Back'}
       </h2>
 
-      <form className="flex flex-col space-y-5 text-base" onSubmit={(e) => e.preventDefault()}>
+      <form className="flex flex-col space-y-5 text-base" onSubmit={handleSubmit}>
         <input
           type="text"
           placeholder="Username"

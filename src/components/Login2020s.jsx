@@ -6,7 +6,7 @@ const Login2020s = () => {
   return (
 
       <div
-        className={`w-full ml-10 max-w-md p-8 bg-gradient-to-br from-indigo-900 via-purple-800 to-pink-900 border border-white/40 rounded-2xl shadow-xl backdrop-blur-md transition-all duration-700 ease-in-out ${
+        className={`w-full ml-10 -mt-5 max-w-md p-8 bg-gradient-to-br from-indigo-900 via-purple-800 to-pink-900 border border-white/40 rounded-2xl shadow-xl backdrop-blur-md transition-all duration-700 ease-in-out ${
           isSignUp ? 'min-h-[500px]' : 'min-h-[440px]'
         }`}
       >
