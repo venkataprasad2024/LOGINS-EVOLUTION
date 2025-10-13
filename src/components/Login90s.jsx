@@ -37,7 +37,7 @@ const Login90s = ({ onLoginSuccess }) => {
 
           {isSignUp && (
             <label>
-              Confirm  Password : 
+              Confirm Password : 
               <input
                 type="password"
                 className="w-full border border-black p-1 mt-1 bg-white text-black"
