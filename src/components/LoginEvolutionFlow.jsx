@@ -15,7 +15,7 @@ const LoginEvolutionFlow = () => {
     }
   };
 
-  const CurrentLogin = loginComponents[step]; // Get the current login component based on the step
+  const CurrentLogin = loginComponents[step]; // Get the current login component based on the ste
 
   return (
     <div className="flex items-center justify-center h-screen bg-gray-100">
