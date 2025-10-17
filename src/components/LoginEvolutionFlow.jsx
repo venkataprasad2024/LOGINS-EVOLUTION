@@ -21,6 +21,7 @@ const LoginEvolutionFlow = () => {
     <div className="flex items-center justify-center h-screen bg-gray-100">
       {/* Render the current login component */}
       <CurrentLogin onLoginSuccess={handleLoginSuccess} />
+
     </div>
   );
 };
