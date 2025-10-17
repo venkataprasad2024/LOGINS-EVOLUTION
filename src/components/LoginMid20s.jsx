@@ -51,6 +51,7 @@ const LoginMid20s = ({ onLoginSuccess }) => {
       </p>
 
       <p className="text-xs text-center mt-4 text-white/60">© 2015 FlatDesign Inc.</p>
+      
     </div>
   );
 };
