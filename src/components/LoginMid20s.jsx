@@ -50,7 +50,7 @@ const LoginMid20s = ({ onLoginSuccess }) => {
         {isSignUp ? 'Already registered? Login' : 'Need an account? Sign up'}
       </p>
 
-      <p className="text-xs text-center mt-4 text-white/60">©2015  FlatDesign
+      <p className="text-xs text-center mt-4 text-white/60">©2015   FlatDesign
       
       
       
