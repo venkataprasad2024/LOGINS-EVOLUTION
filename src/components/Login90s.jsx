@@ -61,7 +61,7 @@ const Login90s = ({ onLoginSuccess }) => {
           {isSignUp ? 'Already have an account? Login' : "Don't have an account? Sign Up"}
         </p>
 
-        <p className="text-[10px] text-center mt-4 text-gray-500">© 1997 YourCompany</p>
+        <p className="text-[10px] text-center mt-4 text-gray-500">© 1997  YourCompany</p>
       </div>
     </div>
   );
